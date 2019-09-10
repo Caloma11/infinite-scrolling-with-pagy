@@ -1,0 +1,10 @@
+   <div class="container">
+    <% @posts.each do |post| %>
+        <div class="posts-container">
+          <%= render partial: "post", locals: {post: post} %>
+
+        </div>
+        <%end%>
+  </div>
+<%= link_to "Next page", posts_path(page: 2), "data-next-page": 2, class: "scroll-load-button", style: "opacity: 0" %>
+  <%#= pagy_nav(@pagy) %>

@@ -66,6 +66,8 @@ GEM
       railties (>= 3.2, < 6.1)
     erubi (1.8.0)
     execjs (2.7.0)
+    faker (2.2.2)
+      i18n (~> 1.6.0)
     ffi (1.11.1)
     font-awesome-sass (5.6.1)
       sassc (>= 1.11)
@@ -95,6 +97,7 @@ GEM
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    pagy (3.5.1)
     pg (0.21.0)
     pry (0.12.2)
       coderay (~> 1.1.0)
@@ -195,9 +198,11 @@ DEPENDENCIES
   bootsnap
   devise
   dotenv-rails
+  faker
   font-awesome-sass (~> 5.6.1)
   jbuilder (~> 2.0)
   listen (~> 3.0.5)
+  pagy
   pg (~> 0.21)
   pry-byebug
   pry-rails
